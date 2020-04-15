@@ -1,0 +1,372 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+/* html {
+  min-height: 100%;
+  position: relative;
+} */
+
+/* -------------/// body \\\\------------- */
+
+body{
+font-family: 'Raleway', sans-serif !important;
+font-family: 'Montserrat', sans-serif;
+overflow: fixed;
+/* cursor: none; */
+margin: 0;
+/* margin-bottom: 40px; */
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+::selection {
+    background-color: #e6ee56;
+    color: #fff;
+}
+
+
+/* -------------/// header \\\\------------- */
+
+nav{
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 60px;
+}
+
+nav .Info_valequiir .info_valequiir_items{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  /* padding: 15px; */
+}
+
+.Logo_valequiir {
+  display: flex;
+  align-items: center;
+}
+
+nav .Logo_valequiir img{
+  width: 30px;
+  height: 35px;
+  /* margin-left: 30px;
+  margin-top: 30px; */
+}
+
+nav .Logo_valequiir a{
+  text-decoration: none;
+  color: #067D9A;
+  font-size: 14px;
+}
+
+nav .Logo_valequiir p{
+  color: #067D9A;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom:0px;
+  font-size: 13px;
+
+}
+
+header nav ul li{
+  list-style: none;
+  padding: 10px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: #067D9A;
+  font-size: 15px;
+
+
+}
+
+nav .Info_valequiir .info_valequiir_items li a:hover{
+  background: linear-gradient(49deg, rgba(207,239,16,1) 0%, rgba(0,222,255,1) 58%);
+  color: transparent;
+  font-size: 17px;
+  -webkit-background-clip: text;
+}
+
+
+
+/* -------------/// header \\\\------------- */
+
+
+/* -------------/// main \\\\------------- */
+
+main{
+  color: #067D9A;
+  margin: 50px;
+  padding-bottom: 40px;
+}
+
+
+#yo_soy{
+  padding: 0 10px;
+  line-height: 130%;
+  font-size: 70px;
+  font-weight: 900;
+}
+
+
+main h1 a {
+color: #067D9A;
+}
+
+
+.link:hover {
+  color: #067D9A;
+	text-decoration: none;
+  opacity: 5%;
+  /* color: #e6ee56; */
+  /* border-bottom: 1px solid transparent;
+    border-image: linear-gradient(-225deg, rgb(116, 223, 239), rgb(131, 180, 244), rgb(135, 137, 247), rgb(130, 89, 250), rgb(117, 7, 252));
+    border-image-slice: 1;
+    background-color: transparent;
+    border-bottom: 3.5px solid;
+    height: 19px !important; */
+}
+
+#cursor{
+  position: fixed;
+  box-sizing: border-box;
+  transition: 0.1s;
+  border-radius: 50%;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  opacity: 0;
+
+}
+
+
+main h1 .link:hover ~ #cursor{
+  opacity: 100%;
+  transform: translate(-250px,-150px);
+}
+
+#cursor img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 10px;
+  /* padding-right: 10px; */
+}
+
+/* -------------/// about me\\\\------------- */
+
+
+
+.container_about{
+  display: flex;
+  justify-content: center;
+}
+
+.container_about .img_me img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+
+.text_me{
+  width: 45%;
+}
+
+p{
+  font-size: 15px;
+  color: #067D9A;
+}
+
+
+main .text_me span{
+  font-weight: 600;
+}
+
+main .text_me a{
+border-bottom: 1px solid transparent;
+border-image: linear-gradient(49deg, rgba(207,239,16,1) 0%, rgba(0,222,255,1) 58%);
+border-image-slice: 3;
+background-color: transparent;
+border-bottom: 3px solid;
+text-decoration: none;
+padding-top: 15px;
+color: #067D9A;
+font-weight: 600;
+}
+
+#espacio{
+  margin-top: 20px !important;
+  padding: 0;
+
+}
+
+/* -------------/// about_new\\\\------------- */
+
+.titulo_skill{
+  font-size: 20px;
+  color: #067D9A;
+  border-bottom: 2px solid #e6ee56;
+  display: inline-block;
+}
+
+.principal{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* -------------/// about_new\\\\------------- */
+
+
+/* -------------/// works \\\\------------- */
+
+#work_card{
+    border: none;
+}
+
+#work_card:hover .color-overlay{
+  opacity: 0.90;
+}
+
+#work_card a{
+  text-decoration: none;
+  text-align: center;
+  /* background-color: transparent; */
+}
+
+h5{
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold !important;
+}
+
+.color-overlay{
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+
+  padding: 35px 20px;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+
+
+
+  transition: .1s ease;
+  /* background-color: #067D9A; */
+  cursor: pointer;
+  border-top: 10px solid transparent;
+
+  /* background-color: white; */
+  background-color: #067D9A;
+
+
+  border-image: linear-gradient(49deg, rgba(207,239,16,1) 0%, rgba(0,222,255,1) 100%);
+  border-image-slice: 3;
+}
+
+.work-text{
+  /* color: #067D9A; */
+  color: #e6ef56;
+  text-align: center;
+}
+
+/* -------------/// works \\\\------------- */
+
+
+/* -------------/// proyectos ux \\\\------------- */
+
+.Tags{
+ color: white;
+ background-color: #067D9A;
+ font-size: 13px;
+ display: inline-block;
+ padding: 1px 3px;
+ border-radius: 3px;
+
+}
+
+.sub_tags{
+color: #067D9A;
+}
+
+.title_work{
+font-weight:  bolder;
+margin-top: 20px;
+font-size: 34px;
+}
+
+.subtitle_works{
+font-weight: 300;
+}
+
+h6{
+  color: #067D9A;
+  border-bottom: 2px solid #e6ee56;
+  border-bottom: linear-gradient(49deg, rgba(207,239,16,1) 0%, rgba(0,222,255,1) 100%);
+  display: inline-block;
+}
+
+.text_1{
+  margin-top: 25px;
+
+}
+
+
+/* -------------/// proyectos ux \\\\------------- */
+
+
+/* -------------/// footer \\\\------------- */
+
+#footer{
+  color: white;
+  background-color: #067D9A;
+  font-size: 15px;
+  padding: 20px 0;
+}
+
+footer ul li{
+  list-style: none;
+}
+
+#info_lados{
+  margin: 10px;
+  justify-content: center;
+  padding: 0;
+  display: flex;
+}
+
+#center_footer{
+  padding: 0;
+}
+
+footer ul li a img{
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+
+}
+
+#info_lados img:hover{
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.valequiir{
+  text-decoration: none;
+  color: white;
+}
+
+.valequiir:hover{
+  background: linear-gradient(49deg, rgba(207,239,16,1) 0%, rgba(0,222,255,1) 58%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
